@@ -244,7 +244,7 @@ export default function Home() {
       desc: "Webiste portofolio yang menjelaskan data diri, skill, portofoilo, dan contact diri saya sendiri. Website ini dibuat menggunakan Next JS dan Tailwind CSS. Dibuat oleh Seorang diri tanpa tim.",
       status: "Statis",
       textButton: "Kunjugi Situs",
-      link: "#",
+      link: "https://muhammadbilalll.vercel.app/",
     },
   ];
 
@@ -381,11 +381,36 @@ export default function Home() {
               className="md:block sm:hidden lg:w-2/3 md:w-2/4 w-1/3"
             />
             <div className="flex md:flex-row flex-col lg:gap-10 gap-5 bg-secondary p-4 rounded-lg shadow-lg hover:shadow-quaternary shadow-sky-600">
-              <FaInstagram className="lg:text-2xl md:text-lg text-sm text-tertiary hover:text-quaternary cursor-pointer" />
-              <FaLinkedinIn className="lg:text-2xl md:text-lg text-sm text-tertiary hover:text-quaternary cursor-pointer" />
-              <FiGithub className="lg:text-2xl md:text-lg text-sm text-tertiary hover:text-quaternary cursor-pointer" />
-              <FaYoutube className="lg:text-2xl md:text-lg text-sm text-tertiary hover:text-quaternary cursor-pointer" />
-              <SiGmail className="lg:text-2xl md:text-lg text-sm text-tertiary hover:text-quaternary cursor-pointer" />
+              <Link
+                href={"https://www.instagram.com/bilal_00s/"}
+                target="_blank"
+              >
+                <FaInstagram className="lg:text-2xl md:text-lg text-sm text-tertiary hover:text-quaternary cursor-pointer" />
+              </Link>
+              <Link
+                href={"https://www.linkedin.com/in/muhammad-bilal-314888221/"}
+                target="_blank"
+              >
+                <FaLinkedinIn className="lg:text-2xl md:text-lg text-sm text-tertiary hover:text-quaternary cursor-pointer" />
+              </Link>
+              <Link
+                href={"https://github.com/muhammadbilal2468"}
+                target="_blank"
+              >
+                <FiGithub className="lg:text-2xl md:text-lg text-sm text-tertiary hover:text-quaternary cursor-pointer" />
+              </Link>
+              <Link
+                href={"https://www.youtube.com/@muhammadbilal-qp2sx/featured"}
+                target="_blank"
+              >
+                <FaYoutube className="lg:text-2xl md:text-lg text-sm text-tertiary hover:text-quaternary cursor-pointer" />
+              </Link>
+              <Link
+                href={"mailto:muhammadbilalll2468@gmail.com"}
+                target="_blank"
+              >
+                <SiGmail className="lg:text-2xl md:text-lg text-sm text-tertiary hover:text-quaternary cursor-pointer" />
+              </Link>
             </div>
           </div>
         </div>
@@ -672,28 +697,6 @@ export default function Home() {
             </a>
             . All Rights Reserved.
           </span>
-          <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-            <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
-                Privacy Policy
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
-                Licensing
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Contact
-              </a>
-            </li>
-          </ul>
         </div>
       </footer>
     </div>

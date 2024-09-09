@@ -23,11 +23,20 @@ export default function ModalCertificate({
 
       <div className="relative bg-white z-10 rounded-lg lg:w-fit w-11/12 lg:h-fit">
         <p
-          className="absolute lg:-top-5 -top-3 -right-5 lg:py-2 py-1 px-5 lg:text-sm md:text-xs text-[10px] font-semibold text-white bg-red-600 rounded-xl cursor-pointer border-2 border-white"
+          className="absolute lg:-top-5 -top-3 -right-5 lg:py-2 py-1 px-5 lg:text-sm md:text-xs text-[10px] font-semibold text-white bg-red-600 rounded-xl cursor-pointer border-2 border-white z-10"
           onClick={closeModal}
         >
           CLOSE
         </p>
+        <Image
+          src={"/images/watermark.png"}
+          alt="Certificate"
+          width={500}
+          height={500}
+          className="absolute top-0 left-0 right-0 bottom-0 w-full h-full rounded-lg"
+          onContextMenu={(e) => e.preventDefault()}
+          onDragStart={(e) => e.preventDefault()}
+        />
         <Image
           src={url}
           alt="Certificate"

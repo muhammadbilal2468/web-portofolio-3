@@ -653,7 +653,6 @@ export default function Home() {
                       ? "text-black bg-tertiary"
                       : "text-white bg-quaternary"
                   }  font-bold`}
-                  onClick={() => showCertificate(portofolio.image)}
                 >
                   {portofolio.status}
                 </button>

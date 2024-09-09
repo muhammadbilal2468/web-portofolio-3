@@ -68,7 +68,7 @@ export default function Home() {
     {
       startdate: "29-08-2022",
       enddate: "29-12-2022",
-      image: "/images/experience1.jpg",
+      image: "/images/experience2.jpg",
       place: "PT Media Kreasi Abadi",
       position: "Frontend Developer",
       desc: "Saya mengikuti magang dari Kampus Merdeka di PT MKA sebagai frontend developer, membuat aplikasi Rentalkuy yaitu aplikasi sewa barang bersama tim pengembangan aplikasi seperti UIUX, Mobile Dev, Backend Dev, Business Analyst.",
@@ -76,7 +76,7 @@ export default function Home() {
     {
       startdate: "01-06-2018",
       enddate: "30-11-2018",
-      image: "/images/experience1.jpg",
+      image: "/images/experience3.jpg",
       place: "PT Telkom Palu",
       position: "Siswa PKL",
       desc: "Saya mengikuti Kerja Praktek di PT Telkom palu di bagian Bisnis dan teknisi lapangan mengenai jaringan.",

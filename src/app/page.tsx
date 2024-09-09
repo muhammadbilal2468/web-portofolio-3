@@ -88,7 +88,6 @@ export default function Home() {
     "Teamwork",
     "Problem Solving",
     "Adaptability",
-    "Problem Solving",
     "Communication",
     "Critical Thinking",
     "Creativity",
@@ -190,16 +189,16 @@ export default function Home() {
       image: "/images/vscode.png",
     },
     {
-      name: "Xampp",
-      image: "/images/xampp.png",
-    },
-    {
       name: "Postman",
       image: "/images/postman.png",
     },
     {
       name: "Canva",
       image: "/images/canva.png",
+    },
+    {
+      name: "Capcut",
+      image: "/images/capcut.png",
     },
   ];
 
@@ -355,7 +354,7 @@ export default function Home() {
             alt="banner"
             width={1000}
             height={1000}
-            className="absolute top-0 xl:right-32 lg:right-24 md:right-20 sm:right-24 lg:w-32 w-12 grayscale hover:grayscale-0 transition-all duration-500"
+            className="absolute top-0 xl:right-32 lg:right-24 md:right-20 sm:right-24 lg:w-32 w-12 grayscale hover:grayscale-0 transition-all duration-500 "
           />
           <div className="flex items-center md:basis-1/2 basis-5/6 h-full">
             <div className="">
@@ -676,9 +675,9 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-                <div className="absolute -bottom-4 left-0 right-0 w-full hover:shadow-quaternary shadow-sky-600">
+                <div className="absolute md:-bottom-4 -bottom-3 left-0 right-0 w-full hover:shadow-quaternary shadow-sky-600">
                   <Link href={portofolio.link} target="_blank">
-                    <button className="flex justify-center items-center gap-2 w-2/3 bg-white font-semibold lg:py-2 py1 rounded-lg mx-auto">
+                    <button className="flex justify-center items-center gap-2 w-2/3 bg-white font-semibold lg:py-2 py-1 rounded-lg mx-auto">
                       {portofolio.status === "Statis" ? (
                         <FcGoogle className="text-xl" />
                       ) : (

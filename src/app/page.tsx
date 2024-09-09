@@ -669,13 +669,13 @@ export default function Home() {
                 </div>
                 <div className="absolute -bottom-4 left-0 right-0 w-full hover:shadow-quaternary shadow-sky-600">
                   <Link href={portofolio.link} target="_blank">
-                    <button className="flex justify-center items-center gap-2 w-2/3 bg-white font-semibold py-1 rounded-lg mx-auto">
+                    <button className="flex justify-center items-center gap-2 w-2/3 bg-white font-semibold lg:py-2 py1 rounded-lg mx-auto">
                       {portofolio.status === "Statis" ? (
                         <FcGoogle className="text-xl" />
                       ) : (
                         <FaYoutube className="text-red-600 text-xl" />
                       )}
-                      <span className="lg:text-sm md:text-xs text-[10px]">
+                      <span className="lg:text-lg md:text-xs text-[10px]">
                         {portofolio.textButton}
                       </span>
                     </button>

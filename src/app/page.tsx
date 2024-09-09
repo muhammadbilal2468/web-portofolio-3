@@ -56,11 +56,11 @@ export default function Home() {
     document.body.removeChild(link);
   };
 
-  const experiance = [
+  const experience = [
     {
       startdate: "29-08-2023",
       enddate: "29-12-2023",
-      image: "/images/experiance1.jpg",
+      image: "/images/experience1.jpg",
       place: "Yayasan hasnur Centre",
       position: "Web Developer",
       desc: "Saya mengikuti program magang dari Kampus Merdeka pada tahun 2023 selama 5 bulan sebagai web developer membuat berbagai aplikasi berbasis website dari client dan bekerja dibawah Mentor sebagai PM.",
@@ -68,7 +68,7 @@ export default function Home() {
     {
       startdate: "29-08-2022",
       enddate: "29-12-2022",
-      image: "/images/experiance1.jpg",
+      image: "/images/experience1.jpg",
       place: "PT Media Kreasi Abadi",
       position: "Frontend Developer",
       desc: "Saya mengikuti magang dari Kampus Merdeka di PT MKA sebagai frontend developer, membuat aplikasi Rentalkuy yaitu aplikasi sewa barang bersama tim pengembangan aplikasi seperti UIUX, Mobile Dev, Backend Dev, Business Analyst.",
@@ -76,7 +76,7 @@ export default function Home() {
     {
       startdate: "01-06-2018",
       enddate: "30-11-2018",
-      image: "/images/experiance1.jpg",
+      image: "/images/experience1.jpg",
       place: "PT Telkom Palu",
       position: "Siswa PKL",
       desc: "Saya mengikuti Kerja Praktek di PT Telkom palu di bagian Bisnis dan teknisi lapangan mengenai jaringan.",
@@ -286,7 +286,7 @@ export default function Home() {
               href={"#experience"}
               className="lg:text-base md:text-xs text-center font-semibold text-white w-full hover:bg-quaternary hover:text-black rounded-lg"
             >
-              Experiance
+              Experience
             </Link>
             <Link
               href={"#skill"}
@@ -321,10 +321,10 @@ export default function Home() {
             </div>
             <div className="sm:hidden md:block flex space-x-4">
               <Link
-                href={"#experiance"}
+                href={"#experience"}
                 className="lg:text-base md:text-xs text-white hover:bg-white hover:text-secondary shadow-lg hover:shadow-quaternary py-1 px-3 rounded-lg"
               >
-                Experiance
+                Experience
               </Link>
               <Link
                 href={"#skill"}
@@ -416,15 +416,15 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ---------------- Experiance ---------------- */}
-      <div className="relative w-full" id="experiance">
+      {/* ---------------- Experience ---------------- */}
+      <div className="relative w-full" id="experience">
         <div className="absolute z-10 top-0 left-0 md:w-96 w-40 md:h-96 h-40 bg-blue-500 rounded-full blur-3xl opacity-50 transform -translate-x-1/2 -translate-y-1/2" />{" "}
         <div className="xl:px-32 lg:px-24 md:px-10 sm:px-5  mx-auto lg:py-20 md:py-16 py-10 space-y-10">
           <h2 className="lg:text-3xl md:text-2xl text-xl text-white text-center">
-            Experiance
+            Experience
           </h2>
           <div className="grid lg:grid-cols-3 grid-cols-2 justify-between lg:gap-10 gap-6">
-            {experiance.map((experiance, index) => (
+            {experience.map((experience, index) => (
               <div
                 className="bg-secondary rounded-xl shadow-lg hover:shadow-quaternary shadow-sky-600 pb-4"
                 data-aos="fade-up"
@@ -432,26 +432,26 @@ export default function Home() {
                 key={index}
               >
                 <Image
-                  src={experiance.image}
-                  alt="experiance"
+                  src={experience.image}
+                  alt="experience"
                   width={500}
                   height={500}
                   className="rounded-t-xl w-full xl:h-48 lg:h-40 md:h-36"
                 />
                 <div className="md:px-5 px-1.5 pt-2 md:space-y-2 space-y-1">
                   <p className="text-end lg:text-xs text-[9px] text-slate-200">
-                    {experiance.startdate} - {experiance.enddate}
+                    {experience.startdate} - {experience.enddate}
                   </p>
                   <div className="">
                     <h5 className="xl:text--xl lg:text-lg md:text-base text-[11px] font-bold tracking-tight text-white">
-                      {experiance.place}
+                      {experience.place}
                     </h5>
                     <h3 className="lg:text-sm md:text-xs text-[9px] font-bold text-sky-600">
-                      {experiance.position}
+                      {experience.position}
                     </h3>
                   </div>
                   <p className="lg:text-xs md:text-[9px] text-[7px] font-normal text-gray-300 dark:text-gray-400 text-justify">
-                    {experiance.desc}
+                    {experience.desc}
                   </p>
                 </div>
               </div>

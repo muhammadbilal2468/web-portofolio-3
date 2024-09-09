@@ -349,7 +349,14 @@ export default function Home() {
         </nav>
 
         {/* --- BANNER --- */}
-        <div className="flex justify-center xl:px-32 lg:px-24 md:px-10 sm:px-5 mx-auto h-full">
+        <div className="relative flex justify-center xl:px-32 lg:px-24 md:px-10 sm:px-5 mx-auto h-full">
+          <Image
+            src="/images/palestina.png"
+            alt="banner"
+            width={1000}
+            height={1000}
+            className="absolute top-0 xl:right-32 lg:right-24 md:right-20 sm:right-24 lg:w-32 w-12"
+          />
           <div className="flex items-center md:basis-1/2 basis-5/6 h-full">
             <div className="">
               <h1 className="lg:text-5xl text-2xl text-tertiary mb-2">
@@ -622,8 +629,10 @@ export default function Home() {
             ))}
           </div>
         </div>
+        {isModal === true && (
+          <ModalCertificate isOpen={isModal} url={urlImage} />
+        )}
       </div>
-      {isModal === true && <ModalCertificate isOpen={isModal} url={urlImage} />}
 
       {/* ---------------- PORTOFOLIO ---------------- */}
       <div className="relative w-full" id="portofolio">

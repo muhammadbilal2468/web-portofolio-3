@@ -12,12 +12,6 @@ import { SiGmail } from "react-icons/si";
 import { FaBars } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { MdInstallMobile } from "react-icons/md";
-
-interface BeforeInstallPromptEvent extends Event {
-  prompt: () => void;
-  userChoice: Promise<{ outcome: "accepted" | "dismissed" }>;
-}
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,26 +20,9 @@ export default function Home() {
   const [urlImage, setUrlImage] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const [deferredPrompt, setDeferredPrompt] =
-    useState<BeforeInstallPromptEvent | null>(null);
-
-  useEffect(() => {
-    const handleBeforeInstallPrompt = (e: BeforeInstallPromptEvent) => {
-      e.preventDefault();
-      setDeferredPrompt(e); // Simpan event untuk digunakan nanti
-    };
-
-    window.addEventListener(
-      "beforeinstallprompt",
-      handleBeforeInstallPrompt as EventListener
-    );
-
-    return () =>
-      window.removeEventListener(
-        "beforeinstallprompt",
-        handleBeforeInstallPrompt as EventListener
-      );
-  }, []);
+  const handleToggleNavbar = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   useEffect(() => {
     handleScroll();
@@ -54,17 +31,6 @@ export default function Home() {
       offset: 50,
     });
   }, []);
-
-  const handleInstallClick = () => {
-    if (deferredPrompt) {
-      deferredPrompt.prompt(); // Memunculkan prompt install
-      deferredPrompt.userChoice.then(() => setDeferredPrompt(null)); // Reset event setelah digunakan
-    }
-  };
-
-  const handleToggleNavbar = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
@@ -305,15 +271,6 @@ export default function Home() {
         {/* --- NAVBAR --- */}
 
         {/* Tombol Humburger */}
-        {isMenuOpen && (
-          <button
-            className="flex items-center justify-center fixed left-5 top-5 text-[10px] text-white px-3 py-0.5 bg-quaternary rounded-md font-bold cursor-pointer z-50"
-            onClick={handleInstallClick}
-          >
-            <MdInstallMobile className="mr-1" /> Install WebApp
-          </button>
-        )}
-
         <div
           onClick={handleToggleNavbar}
           className="sm:block md:hidden fixed right-5 top-5 text-white font-bold cursor-pointer z-50"

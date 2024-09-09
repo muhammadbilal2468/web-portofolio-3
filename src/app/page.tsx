@@ -307,7 +307,7 @@ export default function Home() {
         {/* Tombol Humburger */}
         {isMenuOpen && (
           <button
-            className="flex items-center justify-center fixed left-5 top-5 text-[10px] text-white px-3 py-0.5 bg-quaternary rounded-md font-bold cursor-pointer z-50"
+            className="flex items-center justify-center fixed left-5 top-5 text-[10px] text-white px-3 py-1.5 bg-quaternary rounded-md font-bold cursor-pointer z-50"
             onClick={handleInstallClick}
           >
             <MdInstallMobile className="mr-1" /> Install WebApp

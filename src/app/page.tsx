@@ -283,25 +283,25 @@ export default function Home() {
         {isMenuOpen && (
           <div className="fixed top-0 right-0 w-full h-fit bg-primary shadow-md z-40 flex flex-col items-start p-5 pt-16 space-y-3">
             <Link
-              href={"#"}
+              href={"#experience"}
               className="lg:text-base md:text-xs text-center font-semibold text-white w-full hover:bg-quaternary hover:text-black rounded-lg"
             >
               Experiance
             </Link>
             <Link
-              href={"#"}
+              href={"#skill"}
               className="lg:text-base md:text-xs text-center font-semibold text-white w-full hover:bg-quaternary hover:text-black rounded-lg"
             >
               Skill
             </Link>
             <Link
-              href={"#"}
+              href={"#certificate"}
               className="lg:text-base md:text-xs text-center font-semibold text-white w-full hover:bg-quaternary hover:text-black rounded-lg"
             >
               Certificate
             </Link>
             <Link
-              href={"#"}
+              href={"#portofolio"}
               className="lg:text-base md:text-xs text-center font-semibold text-white w-full hover:bg-quaternary hover:text-black rounded-lg"
             >
               Portofolio
@@ -321,25 +321,25 @@ export default function Home() {
             </div>
             <div className="sm:hidden md:block flex space-x-4">
               <Link
-                href={"#"}
+                href={"#experiance"}
                 className="lg:text-base md:text-xs text-white hover:bg-white hover:text-secondary shadow-lg hover:shadow-quaternary py-1 px-3 rounded-lg"
               >
                 Experiance
               </Link>
               <Link
-                href={"#"}
+                href={"#skill"}
                 className="lg:text-base md:text-xs text-white hover:bg-white hover:text-secondary shadow-lg hover:shadow-quaternary py-1 px-3 rounded-lg"
               >
                 Skill
               </Link>
               <Link
-                href={"#"}
+                href={"#certificate"}
                 className="lg:text-base md:text-xs text-white hover:bg-white hover:text-secondary shadow-lg hover:shadow-quaternary py-1 px-3 rounded-lg"
               >
                 Certificate
               </Link>
               <Link
-                href={"#"}
+                href={"#portofolio"}
                 className="lg:text-base md:text-xs text-white hover:bg-white hover:text-secondary shadow-lg hover:shadow-quaternary py-1 px-3 rounded-lg"
               >
                 Portofolio
@@ -349,7 +349,7 @@ export default function Home() {
         </nav>
 
         {/* --- BANNER --- */}
-        <div className="flex justify-center xl:px-32 lg:px-24 md:px-10 sm:px-5  mx-auto h-full">
+        <div className="flex justify-center xl:px-32 lg:px-24 md:px-10 sm:px-5 mx-auto h-full">
           <div className="flex items-center md:basis-1/2 basis-5/6 h-full">
             <div className="">
               <h1 className="lg:text-5xl text-2xl text-tertiary mb-2">
@@ -417,7 +417,7 @@ export default function Home() {
       </div>
 
       {/* ---------------- Experiance ---------------- */}
-      <div className="relative w-full">
+      <div className="relative w-full" id="experiance">
         <div className="absolute z-10 top-0 left-0 md:w-96 w-40 md:h-96 h-40 bg-blue-500 rounded-full blur-3xl opacity-50 transform -translate-x-1/2 -translate-y-1/2" />{" "}
         <div className="xl:px-32 lg:px-24 md:px-10 sm:px-5  mx-auto lg:py-20 md:py-16 py-10 space-y-10">
           <h2 className="lg:text-3xl md:text-2xl text-xl text-white text-center">
@@ -461,7 +461,7 @@ export default function Home() {
       </div>
 
       {/* ---------------- SKILL ---------------- */}
-      <div className="relative w-full">
+      <div className="relative w-full" id="skill">
         <div className="xl:px-32 lg:px-24 md:px-10 sm:px-5  mx-auto lg:py-20 md:py-16 py-10">
           <div className="xl:w-3/4 w-full mx-auto boder-4 border-white">
             <div className="w-full">
@@ -589,7 +589,7 @@ export default function Home() {
       </div>
 
       {/* ---------------- CERTIFICATE ---------------- */}
-      <div className="relative w-full">
+      <div className="relative w-full" id="certificate">
         <div className="xl:px-32 lg:px-24 md:px-10 sm:px-5  mx-auto lg:py-20 md:py-16 py-10 space-y-10">
           <h2 className="lg:text-3xl md:text-2xl text-xl text-white text-center">
             Certificate
@@ -626,7 +626,7 @@ export default function Home() {
       {isModal === true && <ModalCertificate isOpen={isModal} url={urlImage} />}
 
       {/* ---------------- PORTOFOLIO ---------------- */}
-      <div className="relative w-full">
+      <div className="relative w-full" id="portofolio">
         <div className="xl:px-32 lg:px-24 md:px-10 sm:px-5  mx-auto lg:py-20 md:py-16 py-10 space-y-10">
           <h2 className="lg:text-3xl md:text-2xl text-xl text-white text-center">
             Portofolio

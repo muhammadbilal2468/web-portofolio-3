@@ -355,7 +355,7 @@ export default function Home() {
             alt="banner"
             width={1000}
             height={1000}
-            className="absolute top-0 xl:right-32 lg:right-24 md:right-20 sm:right-24 lg:w-32 w-12"
+            className="absolute top-0 xl:right-32 lg:right-24 md:right-20 sm:right-24 lg:w-32 w-12 grayscale hover:grayscale-0 transition-all duration-500"
           />
           <div className="flex items-center md:basis-1/2 basis-5/6 h-full">
             <div className="">

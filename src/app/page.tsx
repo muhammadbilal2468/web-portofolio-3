@@ -225,7 +225,7 @@ export default function Home() {
     {
       name: "RentalGoo",
       image: "/images/portofolio1.png",
-      desc: "Webiste rental barang dengan sistem e-commerce, dimana semua pengguna dapat menyewa maupun menyewakan. Teknologi digunakan Node JS, Express JS, Sequalize, MYSQL, RESTFULL API, React JS, Tailwind CSS, Flowbite, Map Leaflet, DLL. Fullstack Dibuat oleh Seorang diri tanpa tim.",
+      desc: "Webiste rental barang dengan sistem e-commerce, dimana semua pengguna dapat menyewa maupun menyewakan. Teknologi digunakan Node JS, Express JS, Sequalize, MYSQL, RESTFULL API, React JS, Tailwind CSS, Flowbite, Map Leaflet, DLL. Fullstack dibuat oleh seorang diri tanpa tim.",
       status: "Dinamis",
       textButton: "Nonton Demo",
       link: "https://www.youtube.com/watch?v=TU6w20CLnrQ",
@@ -233,7 +233,7 @@ export default function Home() {
     {
       name: "S1 Akuntansi",
       image: "/images/portofolio2.png",
-      desc: "Webiste profil dari S1 Akuntansi Sektor Publik Universitas Tadulako dengan menggunakan React JS,Tailwind CSS, Flowbite. Frontend Dibuat oleh Seorang diri tanpa tim.",
+      desc: "Webiste profil dari S1 Akuntansi Sektor Publik Universitas Tadulako dengan menggunakan React JS,Tailwind CSS, Flowbite. Dibuat oleh seorang diri tanpa tim.",
       status: "Statis",
       textButton: "Kunjugi Situs",
       link: "https://fekon-untad.vercel.app/",
@@ -241,10 +241,18 @@ export default function Home() {
     {
       name: "Web Portofolio",
       image: "/images/portofolio3.png",
-      desc: "Webiste portofolio yang menjelaskan data diri, skill, portofoilo, dan contact diri saya sendiri. Website ini dibuat menggunakan Next JS dan Tailwind CSS. Dibuat oleh Seorang diri tanpa tim.",
+      desc: "Webiste portofolio yang menjelaskan data diri, skill, portofoilo, dan contact diri saya sendiri. Website ini dibuat menggunakan Next JS dan Tailwind CSS. Dibuat oleh seorang diri tanpa tim.",
       status: "Statis",
       textButton: "Kunjugi Situs",
       link: "https://muhammadbilalll.vercel.app/",
+    },
+    {
+      name: "Sangganipa",
+      image: "/images/portofolio4.png",
+      desc: "Webiste paslon gubernur provinsi Sulawesi Tengah. Dibuat dengan menggunakan React JS,Tailwind CSS, Server Ubuntu, Nginx, Cherbot SSL. Dibuat oleh seorang diri tanpa tim. ",
+      status: "Statis",
+      textButton: "Kunjugi Situs",
+      link: "https://sangganipa.com/",
     },
   ];
 
@@ -267,7 +275,7 @@ export default function Home() {
       </div>
 
       {/* ---------------- HOME ---------------- */}
-      <div className="relative w-full lg:h-screen h-fit sm:pt-40">
+      <div className="relative w-full lg:h-screen h-fit sm:pt-40" id="home">
         <div className="absolute z-40 top-0 right-0 md:w-96 w-40 md:h-96 h-40 bg-blue-500 rounded-full blur-3xl opacity-50 transform translate-x-1/2 -translate-y-1/2" />
         {/* --- NAVBAR --- */}
 
@@ -322,9 +330,11 @@ export default function Home() {
           }`}
         >
           <div className="xl:px-32 lg:px-24 md:px-10 sm:px-5  mx-auto py-4 flex justify-between items-center">
-            <div className="lg:text-2xl md:text-lg sm:text-sm  text-tertiary font-bold">
-              My Portfolio
-            </div>
+            <Link href={"#home"}>
+              <div className="lg:text-2xl md:text-lg sm:text-sm  text-tertiary font-bold cursor-pointer">
+                My Portfolio
+              </div>
+            </Link>
             <div className="sm:hidden md:block flex space-x-4">
               <Link
                 href={"#experience"}
@@ -649,7 +659,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:gap-20 lg:gap-16 gap-7 md:justify-between w-full">
             {portofolios.map((portofolio, index) => (
               <div
-                className="relative md:w-full w-3/4 bg-secondary rounded-xl shadow-lg hover:shadow-quaternary shadow-sky-600 p-2 mb-10 sm:mx-auto"
+                className="relative md:w-full w-3/4 bg-secondary rounded-xl shadow-lg hover:shadow-quaternary shadow-sky-600 p-2 mb-10 sm:mx-auto pb-5"
                 key={index}
                 data-aos="zoom-in-up"
                 data-aos-duration={`${index + 2}00`}
@@ -702,9 +712,9 @@ export default function Home() {
       </div>
 
       {/* ---------------- FOOTER ---------------- */}
-      <footer className="w-full rounded-lg shadow py-10">
+      <footer className="w-full rounded-lg shadow py-10 bg-black">
         <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-300">
             © 2024{" "}
             <a href="https://flowbite.com/" className="hover:underline">
               Muhammad Bilal™

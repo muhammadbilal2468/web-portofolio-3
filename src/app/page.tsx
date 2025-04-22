@@ -59,9 +59,17 @@ export default function Home() {
 
   const experience = [
     {
+      startdate: "16-11-2024",
+      enddate: "29-12-2024",
+      image: "/images/experience1.jpeg",
+      place: "PT Midi Utama Indonesia",
+      position: "IT Support",
+      desc: "Saya berkerja sebagai IT support yang mengatasi masalah teknis, memberikan dukungan teknis, dan memantau sistem untuk memastikan kinerja dan stabilitas sistem berjalan dengan baik.",
+    },
+    {
       startdate: "29-08-2023",
       enddate: "29-12-2023",
-      image: "/images/experience1.jpg",
+      image: "/images/experience2.jpg",
       place: "Yayasan hasnur Centre",
       position: "Web Developer",
       desc: "Saya mengikuti program magang dari Kampus Merdeka pada tahun 2023 selama 5 bulan sebagai web developer membuat berbagai aplikasi berbasis website dari client dan bekerja dibawah Mentor sebagai PM.",
@@ -69,7 +77,7 @@ export default function Home() {
     {
       startdate: "29-08-2022",
       enddate: "29-12-2022",
-      image: "/images/experience2.jpg",
+      image: "/images/experience3.jpg",
       place: "PT Media Kreasi Abadi",
       position: "Frontend Developer",
       desc: "Saya mengikuti magang dari Kampus Merdeka di PT MKA sebagai frontend developer, membuat aplikasi Rentalkuy yaitu aplikasi sewa barang bersama tim pengembangan aplikasi seperti UIUX, Mobile Dev, Backend Dev, Business Analyst.",
@@ -77,7 +85,7 @@ export default function Home() {
     {
       startdate: "01-06-2018",
       enddate: "30-11-2018",
-      image: "/images/experience3.jpg",
+      image: "/images/experience4.jpg",
       place: "PT Telkom Palu",
       position: "Siswa PKL",
       desc: "Saya mengikuti Kerja Praktek di PT Telkom palu di bagian Bisnis dan teknisi lapangan mengenai jaringan.",
@@ -132,6 +140,11 @@ export default function Home() {
     },
     {
       name: "React JS",
+      image: "/images/reactjs.png",
+      level: "Intermediate",
+    },
+    {
+      name: "React Native",
       image: "/images/reactjs.png",
       level: "Intermediate",
     },
@@ -246,14 +259,14 @@ export default function Home() {
       textButton: "Kunjugi Situs",
       link: "https://muhammadbilalll.vercel.app/",
     },
-    {
-      name: "Sangganipa",
-      image: "/images/portofolio4.png",
-      desc: "Webiste paslon gubernur provinsi Sulawesi Tengah. Dibuat dengan menggunakan React JS,Tailwind CSS, Server Ubuntu, Nginx, Cherbot SSL. Dibuat oleh seorang diri tanpa tim. ",
-      status: "Statis",
-      textButton: "Kunjugi Situs",
-      link: "https://sangganipa.com/",
-    },
+    // {
+    //   name: "Sangganipa",
+    //   image: "/images/portofolio4.png",
+    //   desc: "Webiste paslon gubernur provinsi Sulawesi Tengah. Dibuat dengan menggunakan React JS,Tailwind CSS, Server Ubuntu, Nginx, Cherbot SSL. Dibuat oleh seorang diri tanpa tim. ",
+    //   status: "Statis",
+    //   textButton: "Kunjugi Situs",
+    //   link: "https://sangganipa.com/",
+    // },
   ];
 
   return (
@@ -654,7 +667,7 @@ export default function Home() {
       <div className="relative w-full" id="portofolio">
         <div className="xl:px-32 lg:px-24 md:px-10 sm:px-5  mx-auto lg:py-20 md:py-16 py-10 space-y-10">
           <h2 className="lg:text-3xl md:text-2xl text-xl text-white text-center">
-            Portofolio
+            1/3 Portofolio (Yang Publish Saja)
           </h2>
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:gap-20 lg:gap-16 gap-7 md:justify-between w-full">
             {portofolios.map((portofolio, index) => (

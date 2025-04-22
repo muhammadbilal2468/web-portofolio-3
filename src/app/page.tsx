@@ -457,7 +457,7 @@ export default function Home() {
         <div className="absolute z-10 top-0 left-0 md:w-96 w-40 md:h-96 h-40 bg-blue-500 rounded-full blur-3xl opacity-50 transform -translate-x-1/2 -translate-y-1/2" />{" "}
         <div className="xl:px-32 lg:px-24 md:px-10 sm:px-5  mx-auto lg:py-20 md:py-16 py-10 space-y-10">
           <h2 className="lg:text-3xl md:text-2xl text-xl text-white text-center">
-            Experience
+            Work Experience
           </h2>
           <div className="grid lg:grid-cols-3 grid-cols-2 justify-between lg:gap-10 gap-6">
             {experience.map((experience, index) => (
@@ -667,7 +667,7 @@ export default function Home() {
       <div className="relative w-full" id="portofolio">
         <div className="xl:px-32 lg:px-24 md:px-10 sm:px-5  mx-auto lg:py-20 md:py-16 py-10 space-y-10">
           <h2 className="lg:text-3xl md:text-2xl text-xl text-white text-center">
-            1/3 Portofolio (Yang Publish Saja)
+            1/3 Portofolio (Only Publish)
           </h2>
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:gap-20 lg:gap-16 gap-7 md:justify-between w-full">
             {portofolios.map((portofolio, index) => (
